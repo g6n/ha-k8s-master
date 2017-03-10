@@ -4,4 +4,5 @@ if [ $HOSTNAME = "haproxy01" ]; then
 else
   cp /tmp/keepalived-slave.conf /etc/keepalived/keepalived.conf
 fi
+tail -f /var/log/haproxy.log
 

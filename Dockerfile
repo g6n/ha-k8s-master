@@ -8,7 +8,7 @@ ADD haproxy.conf /etc/haproxy/haproxy.conf
 ADD keepalived-master.conf /tmp/keepalived-master.conf
 ADD keepalived-slave.conf /tmp/keepalived-slave.conf
 ADD startup.sh /startup.sh
-Un chmod +x /startup.sh
+RUN chmod +x /startup.sh
 
 ENTRYPOINT /startup.sh
 

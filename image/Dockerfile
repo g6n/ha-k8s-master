@@ -7,6 +7,7 @@ RUN apt-get update && \
 ADD haproxy.conf /etc/haproxy/haproxy.conf
 ADD keepalived-master.conf /tmp/keepalived-master.conf
 ADD keepalived-slave.conf /tmp/keepalived-slave.conf
+ADD haproxy.log /var/log/haproxy.log
 ADD startup.sh /startup.sh
 RUN chmod +x /startup.sh
 
